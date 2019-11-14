@@ -9,7 +9,7 @@ const DrumPad = (props) => {
     })
 
     return(
-        <div className='drum-pad-container'>
+        <div className='drum-pad-container' >
             <div className='drum-pad' style={{border: '1px solid black', height: '500px', width: '500px'}}>
                 {pad}
             </div>

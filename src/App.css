@@ -27,3 +27,7 @@
 .pad-container{
   margin: 20px;
 }
+
+.playing {
+  background-color: pink;
+}

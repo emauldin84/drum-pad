@@ -8,8 +8,33 @@ class App extends Component {
     pads: [...loops]
   }
 
-  render() {
-    console.log(this.state.pads)
+handleKeyDown = (e) => {
+    let pads = [...this.state.pads]
+    pads.forEach((loop, i) => {
+      if (loop.key === e.key) {
+        pads[i].playing = true
+        this.setState ({
+          pads
+        })
+      }
+    })
+}
+handleKeyUp = (e) => {
+  let pads = [...this.state.pads]
+  pads.forEach((loop, i) => {
+    if (loop.key === e.key) {
+      pads[i]['playing'] = false
+      this.setState ({
+        pads
+      })
+    }
+  })
+}
+
+render() {
+  window.addEventListener('keydown', this.handleKeyDown);
+  window.addEventListener('keyup', this.handleKeyUp);
+  console.log(this.state.pads)
 
     return (
       <div className="App">

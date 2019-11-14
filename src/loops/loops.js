@@ -3,7 +3,8 @@ export const loops = [
         id: 1,
         name: 'boom',
         audioFile: './boom.wav',
-        key: 'q'
+        key: 'q',
+        playing: false,
     },
     { 
         id: 2,
