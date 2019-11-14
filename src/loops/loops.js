@@ -2,46 +2,55 @@ export const loops = [
     { 
         id: 1,
         name: 'boom',
-        audioFile: './boom.wav'
+        audioFile: './boom.wav',
+        key: 'q'
     },
     { 
         id: 2,
         name: 'clap',
-        audoFile: './clap.wav'
+        audioFile: './clap.wav',
+        key: 'w'
     },
     { 
         id: 3,
         name: 'hihat',
-        audoFile: './hihat.wav'
+        audioFile: './hihat.wav',
+        key: 'e'
     },
     {
         id: 4,
         name: 'kick',
-        audioFile: './kick.wav'
+        audioFile: './kick.wav',
+        key: 'a'
     },
     {
         id: 5,
         name: 'openhat',
-        audioFile: './openfile.wav'
+        audioFile: './openhat.wav',
+        key: 's'
     },
     {
         id: 6,
         name: 'ride',
-        audioFile: './ride.wav'
+        audioFile: './ride.wav',
+        key: 'd'
     },
     {
         id: 7,
         name: 'snare',
-        audioFile: './snare.wav'
+        audioFile: './snare.wav',
+        key: 'z'
     },
     {
         id: 8,
         name: 'tink',
-        audioFile: './tink.wav'
+        audioFile: './tink.wav',
+        key: 'x'
     },
     {
         id: 9,
         name: 'tom',
-        audioFile: './tom.wav'
+        audioFile: './tom.wav',
+        key: 'c'
     }
 ]

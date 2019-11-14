@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {loops} from './loops/loops'
+import { loops } from './loops/loops'
 import DrumPad from './components/DrumPad'
 
 class App extends Component {
@@ -13,7 +13,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <DrumPad />
+        <DrumPad 
+          pads={this.state.pads}
+        />
         
       </div>
     );
