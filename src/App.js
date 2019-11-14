@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-
+import {loops} from './loops/loops'
 import DrumPad from './components/DrumPad'
 
-function App() {
-  return (
-    <div className="App">
-      <DrumPad />
-      
-    </div>
-  );
+class App extends Component {
+  state = {
+    pads: [...loops]
+  }
+
+  render() {
+    console.log(this.state.pads)
+
+    return (
+      <div className="App">
+        <DrumPad />
+        
+      </div>
+    );
+
+  }
 }
 
 export default App;
