@@ -12,6 +12,8 @@ const Pad = (props) => {
         <div autoFocus className={styles} style={{border: '1px solid black', width: '100px', height: '100px'}} onClick={handleClick}>
             <div className='pad'>
                 {props.padDetails.name}
+                <br/>
+                {props.padDetails.key}
                 <audio id={`audio-${props.padDetails.id}`} src={props.padDetails.audioFile} type="audio/wav"></audio>
 
             </div>

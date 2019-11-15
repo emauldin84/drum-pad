@@ -16,6 +16,7 @@ handleKeyDown = (e) => {
         this.setState ({
           pads
         })
+        document.getElementById(`audio-${loop.id}`).currentTime = 0;
         document.getElementById(`audio-${loop.id}`).play()
       }
     })
