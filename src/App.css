@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -17,17 +21,102 @@
   color: white;
 }
 
+.drum-pad-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
 .drum-pad{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+
 }
 
-
-.pad-container{
+/* Pink */
+.pad-container-pink{
   margin: 20px;
+  transition: all 0.25s;
+  background-color: rgb(255, 121, 179);
+
 }
 
-.playing {
-  background-color: pink;
+.playing-pink {
+  /* background-color: pink; */
+  background-color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  /* animation: none; */
+  animation: neonPink .5s ease-in-out infinite alternate;
 }
+
+@keyframes neonPink {
+  from {
+    box-shadow:  0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    box-shadow: d 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+/* Blue */
+.pad-container-blue{
+  margin: 20px;
+  transition: all 0.25s;
+  background-color: rgb(124, 186, 252);
+
+}
+
+.playing-blue {
+  /* background-color: Blue; */
+  background-color: #228DFF;
+  -webkit-animation: none;
+  -moz-animation: none;
+  /* animation: none; */
+  animation: neonBlue .5s ease-in-out infinite alternate;
+}
+
+@keyframes neonBlue {
+  from {
+    box-shadow:  0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: d 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+.pad-container-violet{
+  margin: 20px;
+  transition: all 0.25s;
+  background-color:rgb(223, 143, 252) ;
+
+}
+
+.playing-violet {
+  /* background-color: Violet; */
+  background-color: #BA01FF;
+  -webkit-animation: none;
+  -moz-animation: none;
+  /* animation: none; */
+  animation: neonViolet .5s ease-in-out infinite alternate;
+}
+
+@keyframes neonViolet {
+  from {
+    box-shadow:  0 0 40px #BA01FF, 0 0 70px #BA01FF, 0 0 80px #BA01FF, 0 0 100px #BA01FF, 0 0 150px #BA01FF;
+  }
+  to {
+    box-shadow: d 0 0 20px #BA01FF, 0 0 35px #BA01FF, 0 0 40px #BA01FF, 0 0 50px #BA01FF, 0 0 75px #BA01FF;
+  }
+}
+
+/* color: #228DFF; */
+/* color: #FFDD1B; */
+/* color: #B6FF00; */
+/* color: #FF9900; */
+/* color: #BA01FF; */
+
+
+

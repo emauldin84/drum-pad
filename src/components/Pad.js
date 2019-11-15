@@ -7,7 +7,7 @@ const Pad = (props) => {
         console.log(props.padDetails.audioFile)
         document.getElementById(`audio-${props.padDetails.id}`).play()
     }
-    let styles = props.padDetails.playing ? 'pad-container playing' : 'pad-container'
+    let styles = props.padDetails.playing ? `pad-container-${props.padDetails.color} playing-${props.padDetails.color}` : `pad-container-${props.padDetails.color}`
     return (
         <div autoFocus className={styles} style={{border: '1px solid black', width: '100px', height: '100px'}} onClick={handleClick}>
             <div className='pad'>
