@@ -1,5 +1,6 @@
 html, body{
   height: 100%;
+  background-color:  rgb(162, 162, 162)
 }
 
 .App {
@@ -25,14 +26,19 @@ html, body{
   display: flex;
   justify-content: center;
   margin-top: 20vh;
+  
 }
 .drum-pad{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border: 1px solid black;
-  height: 40%;
-  width: 40%;
+  height: 370px;
+  width: 370px;
+  background-color: rgba(54, 69, 79, .8);
+  border-radius: 5px;
+  /* box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12); */
+  box-shadow: 0 50px 100px rgba(26, 26, 28, 0.15), 0 15px 35px rgba(59, 59, 63, 0.2), 0 5px 15px rgba(85, 85, 92, 0.12);
 
 }
 
@@ -41,6 +47,8 @@ html, body{
   margin: 20px;
   transition: all 0.25s;
   background-color: rgb(255, 121, 179);
+  box-shadow: 0 50px 100px rgba(234, 234, 237, 0.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+
 
 }
 
@@ -51,6 +59,9 @@ html, body{
   -moz-animation: none;
   /* animation: none; */
   animation: neonPink .5s ease-in-out infinite alternate;
+  transform: scale(.975)
+
+
 }
 
 @keyframes neonPink {
@@ -76,6 +87,7 @@ html, body{
   -moz-animation: none;
   /* animation: none; */
   animation: neonBlue .5s ease-in-out infinite alternate;
+  transform: scale(.975)
 }
 
 @keyframes neonBlue {
@@ -91,7 +103,6 @@ html, body{
   margin: 20px;
   transition: all 0.25s;
   background-color:rgb(223, 143, 252) ;
-
 }
 
 .playing-violet {
@@ -101,6 +112,7 @@ html, body{
   -moz-animation: none;
   /* animation: none; */
   animation: neonViolet .5s ease-in-out infinite alternate;
+  transform: scale(.975)
 }
 
 @keyframes neonViolet {

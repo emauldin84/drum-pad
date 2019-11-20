@@ -5,7 +5,7 @@ const Pad = (props) => {
 
     let styles = props.padDetails.playing ? `pad-container-${props.padDetails.color} playing-${props.padDetails.color}` : `pad-container-${props.padDetails.color}`
     return (
-        <div className={styles} id={props.padDetails.id} style={{border: '1px solid black', width: '100px', height: '100px'}} onMouseDown={(e) => props.mouseDown(e.target.id)} onMouseUp={(e) => props.mouseUp(e.target.id)}>
+        <div className={styles} id={props.padDetails.id} style={{border: '1px solid black', width: '80px', height: '80px'}} onMouseDown={(e) => props.mouseDown(e.target.id)} onMouseUp={(e) => props.mouseUp(e.target.id)}>
             <div className='pad' id={props.padDetails.id}>
                 {props.padDetails.name}
                 <br/>
