@@ -25,41 +25,41 @@ export const loops = [
         name: 'kick',
         audioFile: './kick.wav',
         key: 'a',
-        color: 'blue'
+        color: 'violet'
     },
     {
         id: 5,
         name: 'openhat',
         audioFile: './openhat.wav',
         key: 's',
-        color: 'blue'
+        color: 'violet'
     },
     {
         id: 6,
         name: 'ride',
         audioFile: './ride.wav',
         key: 'd',
-        color: 'blue'
+        color: 'violet'
     },
     {
         id: 7,
         name: 'snare',
         audioFile: './snare.wav',
         key: 'z',
-        color: 'violet'
+        color: 'blue'
     },
     {
         id: 8,
         name: 'tink',
         audioFile: './tink.wav',
         key: 'x',
-        color: 'violet'
+        color: 'blue'
     },
     {
         id: 9,
         name: 'tom',
         audioFile: './tom.wav',
         key: 'c',
-        color: 'violet'
+        color: 'blue'
     }
 ]
